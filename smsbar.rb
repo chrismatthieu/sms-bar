@@ -7,7 +7,7 @@ get '/' do
 end
 
 get '/:username/:password/:from/:to/:message' do
-  # begin
+  begin
 
     oneapi = Smsified::OneAPI.new :username => params[:username],
                                      :password => params[:password]
@@ -18,7 +18,7 @@ get '/:username/:password/:from/:to/:message' do
                        
     "Yay! Message sent to #{params[:to]}"
 
-  # rescue => error
-    # "Sad panda error message goes here - your SMS did not get delivered :("
-  # end
+  rescue => error
+    "Sad panda error message goes here - your SMS did not get delivered :("
+  end
 end
