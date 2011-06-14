@@ -1,2 +1,2 @@
-require 'smsbar'
+require './smsbar'
 run Sinatra::Application
