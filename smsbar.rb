@@ -19,7 +19,6 @@ get '/:username/:password/:from/:to/:message' do
     "Yay! Message sent to #{params[:to]}"
 
   rescue => error
-    puts error.inspect
-    status 400
+    "Sad panda error message goes here - your SMS did not get delivered."
   end
 end
