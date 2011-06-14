@@ -1,2 +1,2 @@
-require 'smsbar.rb'
+require 'smsbar'
 run Sinatra::Application
