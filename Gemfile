@@ -1,0 +1,2 @@
+gem "smsified"
+gem "sinatra"

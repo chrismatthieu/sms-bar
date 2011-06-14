@@ -1,0 +1,7 @@
+Welcome to the SMSified SMS Bar!  Get your free developer account at http://smsified.com and start sending SMS messages now!
+
+You can now send SMS messages from your web browser's address bar using your SMSified account and the following format:
+
+http://smsbar.heroku.com/username/password/from_smsified_number/to_mobile_number/encoded+message
+
+i.e. http://smsbar.heroku.com/my_user_name/secret_password/7177455074/14803194368/hello+there
