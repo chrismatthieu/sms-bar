@@ -19,6 +19,6 @@ get '/:username/:password/:from/:to/:message' do
     "Yay! Message sent to #{params[:to]}"
 
   rescue => error
-    "Sad panda error message goes here - your SMS did not get delivered because: #{error.inspect.to_s}"
+    "Sad panda error message goes here - your SMS did not get delivered because: " + error.inspect.to_s
   end
 end
